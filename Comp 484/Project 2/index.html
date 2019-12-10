@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Giga Pet</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Giga Pet
+      </h1>
+    </header>
+
+    <main>
+    <audio id="danceAudio">
+      <source src="https://cdn.glitch.com/d9c9199f-96e8-49b7-957a-282b4597a023%2Fdance.mp3?v=1572665309094" type="audio/mpeg">
+    </audio>
+
+    <audio id="playAudio">
+      <source src="https://cdn.glitch.com/d9c9199f-96e8-49b7-957a-282b4597a023%2Fplay.mp3?v=1572665305528" type="audio/mpeg">
+    </audio>
+
+    <audio id="normalAudio">
+      <source src="https://cdn.glitch.com/d9c9199f-96e8-49b7-957a-282b4597a023%2Fnormal.mp3?v=1572665301911" type="audio/mpeg">
+    </audio>
+
+      <section class="pet-image-container">
+         <!-- Replace pet image with your own pet image -->
+        <img class="pet-image" id ="screenshot" src="https://cdn.glitch.com/d9c9199f-96e8-49b7-957a-282b4597a023%2Feevee.jpg?v=1572652395611">
+      </section>
+      <section class="dashboard">
+        <div>Name: <strong><span class="name"></span></strong></div>
+        <div>Weight: <strong><span class="weight"></span> lbs</strong></div>
+        <div>Happiness: <strong><span class="happiness"></span> tail wags (per min)</strong></div>
+        <div>Charm: <strong><span class="dance"></span> %</strong></div>
+        <div class="button-container">
+          <button class="treat-button">
+            Treat
+          </button>
+          <button class="play-button">
+            Play
+          </button>
+          <button class="exercise-button">
+            Exercise
+          </button>
+          <button class="dance-button">
+            Dance
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <p class ="act" id ="text"></p>
+      </section>
+    </main>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+  </body>
+</html>

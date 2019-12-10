@@ -1,0 +1,130 @@
+/*Haemin Lee
+comp 484
+
+
+
+/* Color Palette
+# - #696D8E
+# - #C4CAD0
+# - #73646E
+# - 
+*/
+* {
+	box-sizing: border-box;
+}
+
+.profile-img{
+	width: 300px;
+	border-radius: 50%;
+	float:left;
+	margin-top: 30px;
+	margin-left: 70px;
+}
+
+.column-narrow{
+	margin-top: 20px;
+	border-radius: 50%;
+	width:30%;
+	min-height:175px;
+	float:left;
+}
+
+.column-wide{
+	width: 70%;
+	/*margin-left: 5px;*/
+	float:left;
+	min-height: 225px;
+    background: #696D8E;
+    padding: 60px;
+    border: 20px solid #C4CAD0;
+}
+content-wrap{
+	max-width: 950px; 
+	margin: 0 auto;
+	text-align: center;
+	padding:50px;
+   	background: #696D8E;
+}
+header{
+	display:flex;
+}
+head{
+	background: #73646E;
+}
+
+/* Global styles 
+------------------------------------*/
+body {
+    background: #C4CAD0;
+}
+
+header h1{
+	margin: 0;
+}
+header h2{
+	margin: 0;
+}
+h2{
+	margin-top: 0;
+}
+main p{
+	font-family: 'Aclonica';
+	font-size: 14px;
+}
+main h2{
+	font-family: 'Sofia';
+}
+main h3{
+	font-family: 'Sofia';
+}
+
+/* Header & Footer 
+------------------------------------*/
+header{
+	text-align: left;
+}
+header{
+	font-family: 'Sofia';
+}
+header h1{
+	font-size: 32px;
+
+}
+header h2{
+	font size: 20px;
+}
+footer{
+	margin-top: 10px;
+	float: left;
+	background: #73646E;
+	width: 1263px;
+	text-align: center;	
+
+}
+
+footer h2 {
+	font-size: 15px;
+}
+footer p {
+	font-size: 10px;
+}
+
+a:hover{
+	color: purple;
+}
+.content_wrap{
+	max-width: 950px;
+	padding: 50px;
+	margin-top: 0;
+	overflow: hidden;
+
+}
+
+body{
+	margin: 0;
+}
+
+.contact-info a{
+	padding: 10px;
+	display:inline-block;
+}

@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    padding: 20px;
+}
+
+h4{
+    padding: 10px;
+}
+
+main{
+    align-items: center;
+}
+
+body{
+    border: 20px;
+}
+
+html{
+    background-color: skyblue;
+}
+.container{
+    display: flex;
+}
+
+#map{
+    border: 2px solid #333;
+    width: 500px;
+    height: 500px;
+}
+

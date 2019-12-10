@@ -1,0 +1,96 @@
+/* Color Palette
+# - color 1
+# - color 2
+# - color 3
+# - color 4
+*/
+* {
+	box-sizing: border-box;
+}
+
+.cartoon{
+	float:left;
+	padding: 20px;
+	border-radius: 50%;
+	width:170px;
+}
+.myinfo{
+    float: right;
+    margin-top: 30px;
+	padding: 20px;
+    width: 600px;
+    height: 350px;
+    text-align: center;
+    border: 2px solid skyblue;
+    border-radius: 10%;
+    background: #696D8E;
+}
+content-wrap{
+	width: 950px; 
+	margin: 0 auto;
+}
+
+.learned{
+	padding: 50px;
+    text-align: center;
+    background: #696D8E;
+    border-radius: 20%;
+    float: left;
+}
+head{
+	background: #FCF7FF;
+	margin-bottom: 10px;
+	font-weight: 1000px;
+}
+
+/* Global styles 
+------------------------------------*/
+body {
+    background: #C4CAD0;
+}
+
+main p{
+	font-family: 'Aclonica';
+	font-size: 14px;
+}
+main h2{
+	font-family: 'Sofia';
+}
+main h3{
+	font-family: 'Sofia';
+}
+
+/* Header & Footer 
+------------------------------------*/
+header{
+	text-align: left;
+	background: #73646E
+}
+header{
+	font-family: 'Sofia';
+}
+header h1{
+	font-size: 32px;
+
+}
+header h2{
+	font size: 20px;
+}
+footer{
+	margin-top: 10px;
+	float: left;
+	background: #73646E;
+	padding: 20px;
+	width: 1250px;
+}
+
+footer h2 {
+	font-size: 15px;
+}
+footer p {
+	font-size: 10px;
+}
+
+a:hover{
+	color: purple;
+}

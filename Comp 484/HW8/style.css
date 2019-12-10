@@ -1,0 +1,130 @@
+/*Haemin Lee
+comp 484
+
+
+
+/* Color Palette
+# - #696D8E
+# - #C4CAD0
+# - #73646E
+# - 
+
+font family
+	font-family: 'Aclonica'
+	font-family: 'Sofia'
+
+
+*/
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;	
+}
+
+body{
+	margin: 0;
+}
+.image-bg{
+	background: linear-gradient(to right, rgba(255,255,255,0.75),rgba(177,21,133,0.5)), url(https://cdn.glitch.com/d9c9199f-96e8-49b7-957a-282b4597a023%2Fbackground2.jpg?v=1569370963678);
+}
+h1{
+	margin: 0;
+	font-family: 'Aclonica';
+	font-size: 3em;
+
+}
+
+h2{
+	margin-top: 0;
+	font-family: 'Aclonica';
+	font-size: 2em;
+}
+
+h3{
+	margin: 0;
+	font-family: 'Aclonica';
+	font-size: 1.5em;
+}
+
+a{
+	color: purple;
+	text-align: center;
+}
+
+a:hover{
+	color: red;
+}
+
+p{
+	font-family: 'Sofia';
+}
+
+lu li{
+	font-family: 'Sofia'
+}
+
+header {
+  padding: 5px;
+  height: auto;
+  color: white;
+  background-color: #696D8E;
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: white;
+  background-color: #696D8E;
+}
+
+i{
+	font-size: 300%;
+	padding: 20px;
+}
+
+.profile-img{
+	width: 200px;
+	border-radius: 50%;
+	float:left;
+	margin-top: 30px;
+	margin-left: 70px;
+}
+
+.contact-info a{
+	padding: 10px;
+	display:inline-block;
+}
+
+.column-wide{
+  width: 30%;
+  float: left; 
+  min-height: 175px;
+}
+
+.column-narrow{
+  width: 40%;
+  float: left;  
+  min-height: 255px;
+}
+
+.content-wrap{
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+}
+nav{
+	background: #C4CAD0;
+	position: fixed;
+	width: 100%;
+}
+nav a{
+	padding: 20px;
+}
+
+#education{
+	background: #73646E;
+}
+

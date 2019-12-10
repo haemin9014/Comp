@@ -1,0 +1,125 @@
+/*
+  Haemin Lee
+  Comp 484
+  Project 1 
+*/
+* {
+	box-sizing: border-box;
+}
+
+a:hover {
+	color: red;
+}
+
+nav {
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+
+.container {
+	width: 600px;
+	margin-left: 400px;
+    margin-right: auto;
+    text-align: right;
+    margin-bottom: 10px;    
+}
+
+.cat {
+	margin-left: 20px;
+    margin-bottom: 20px;
+    height: 400px;
+    width: 500px;
+    padding: 50px;
+    border-radius: 70%;
+}
+
+.introExplain{
+    float: right;
+    margin-top: 30px;
+    background-image: url(https://cdn.glitch.com/d9c9199f-96e8-49b7-957a-282b4597a023%2Fold.jpg?v=1569370963037);
+	padding: 50px;
+    width: 700px;
+    height: 350px;
+    text-align: center;
+    border: 2px solid skyblue;
+    border-radius: 10%;
+}
+
+h2{
+    color: purple;
+}
+
+header{
+    background: black;
+}
+
+a{
+    color: white;
+    font-size: 20px;
+}
+
+h1{
+    color:white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.codeTable{
+    padding: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table, th, td {
+	padding: 20px 50px;
+    border: 2px solid black;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+.gameImage{
+    height: 500px;
+    width: 500px;
+    padding: 30px;
+}
+
+.foodImage{
+    height: 700px;
+    width: 700px;
+    padding: 30px;
+}
+
+.sidebar nav a{
+    display: flex;
+    color: black;
+    width: 800px;
+}
+
+.sidebar{
+    float: right;
+    background-image: url(https://cdn.glitch.com/d9c9199f-96e8-49b7-957a-282b4597a023%2Fold.jpg?v=1569370963037);
+}
+.sidebar nav a:hover{
+    color:red;
+}
+
+footer{
+    background:black;
+}
+
+footer a{
+    color:white;
+    margin-left: 1000px
+}
+
+article a{
+    color:black;
+}
