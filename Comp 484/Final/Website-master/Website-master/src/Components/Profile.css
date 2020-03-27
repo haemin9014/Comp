@@ -1,0 +1,98 @@
+/* /------ HTML Tags ------/ */
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+h1{
+    margin-bottom: 50px;
+}
+
+h2, h3{
+    margin: 10px auto;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    font-size: 22px;
+}
+
+img{
+    font-size: 15px;
+    color: #F00;
+}
+
+
+article{
+    margin-bottom: 50px;
+    color: #000;
+    background-color: #DEDEDE;
+    padding: 35px;
+    border-radius: 20px;
+}
+
+aside{
+    float: left;
+}
+
+q{
+    font-style: italic;
+}
+
+/* /------ IDs ------/ */
+#central{
+    width: 90%;
+    padding: 20px 100px 30px 100px;
+}
+
+/* /* Contained in Section / */
+#profile-desc{
+    width: 50%;
+    text-align: justify;
+}
+
+/* / Contained in Aside / */
+#news{
+    background-color: green;
+    width: 40%;
+    padding: 0 35px;
+    text-align: justify;
+}
+
+/* /----- Classes ------*/ */
+.header-bold{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.contact-info {
+    margin: 15px;
+  }
+  .contact-info a {
+    min-width: 25px;
+    padding: 4%;
+    margin: 0 10px;
+    display: inline-block;
+    background-color: #0a3d62;
+    color: white;
+    border-radius: 50%;
+  }
+  .contact-info a:hover {
+    color: #36454f;
+    background-color: white;
+  }

@@ -1,0 +1,167 @@
+
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+  }
+  
+  .App-header {
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: left;
+    font-size: calc(10px + 2vmin);
+    
+  
+  }
+  
+  .App-body{
+    background-color: #3f588a;
+    padding: 45px;
+    min-height: 76vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #09d3ac;
+  }
+  .sidebar{
+    width: 980px;
+    text-align: left;
+    padding: 20px;
+  }
+  .slider {
+    top: 1vw;
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+    height: 700px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .text{
+    margin-right: 1000px;
+  }
+
+  .cardContainer{
+    display: inline;
+  }
+
+  .cardOne{
+    padding: 50px;
+    justify-content: space-around;
+  }
+
+  .cardTwo{
+    padding: 50px;
+    justify-content: space-around;
+  } 
+
+  .slider-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .slide {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .arrow {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform ease-in .1s;
+  }
+  
+
+  .nextArrow {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    z-index: 999;
+    color: #fff;
+  }
+  
+  .backArrow {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    z-index: 999;
+    color: #fff;
+  }
+  
+  .fa-arrow-right:before, .fa-arrow-left:before {
+    color: #222
+  }
+  
+  #pacman{
+    display: flex;
+  }
+ 
+  #snake{
+    display: flex;
+  }
+  #space{
+    display: flex;
+  }
+  .game_image {
+    margin: 0 30px 10px 30px;
+    border-radius: 15%;
+    height: 400px;
+  }
+
+  .game_title{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+
+  .text_place {
+    padding: 30px;
+    background-color: turquoise;
+    border-radius: 15%;
+    border-color: black 10px;
+    text-align: justify;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.text_place p {
+  font-size: 20px;
+}
+
+#button {
+  margin-left: 420px;
+}
+
+.game_btn .btn {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.sidebar a:hover {
+  color: #000000;
+  text-decoration: none;
+}

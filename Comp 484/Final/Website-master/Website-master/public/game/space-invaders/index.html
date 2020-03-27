@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#000000">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Space Invaders</title>
+    <!-- Phaser 3 -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+    <script src="js/space-invaders.js"></script>
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../game.css" type="text/css">
+  -->
+  </head> 
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="App">
+        <header class="App-header">
+          <div class="sidebar">
+            <header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary">
+              <div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters">
+                <h3 class="MuiTypography-root MuiTypography-h3">Gameboard</h3>
+                <a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart" tabindex="0" role="button" aria-disabled="false" aria-label="menu" id="button" href="/">
+                  <span class="MuiIconButton-label">Home</span><span class="MuiTouchRipple-root"></span>
+                </a>
+                <a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart" tabindex="0" role="button" aria-disabled="false" aria-label="menu" href="/game">
+                  <span class="MuiIconButton-label">Game</span><span class="MuiTouchRipple-root"></span>
+                </a>
+                <a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart" tabindex="0" role="button" aria-disabled="false" aria-label="menu" href="/profile">
+                  <span class="MuiIconButton-label">Profile</span><span class="MuiTouchRipple-root"></span>
+                </a>
+              </div>
+            </header>
+          </div>
+        </header>
+        
+        <div class="App-body">
+          <div>
+            <div id="game"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

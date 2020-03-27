@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#000000">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Space Invaders</title>
+    <!-- Phaser 3 -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+    <script src="js/space-invaders.js"></script>
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../game.css" type="text/css">
+  </head> 
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="App">
+        <header class="App-header">
+          <div class="sidebar">
+            <header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary">
+              <div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters">
+                <h3 class="MuiTypography-root MuiTypography-h3">Gameboard</h3>
+                <a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart" tabindex="0" role="button" aria-disabled="false" aria-label="menu" id="button" href="/">
+                  <span class="MuiIconButton-label">Home</span><span class="MuiTouchRipple-root"></span>
+                </a>
+                <a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart" tabindex="0" role="button" aria-disabled="false" aria-label="menu" href="/game">
+                  <span class="MuiIconButton-label">Game</span><span class="MuiTouchRipple-root"></span>
+                </a>
+                <a class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart" tabindex="0" role="button" aria-disabled="false" aria-label="menu" href="/profile">
+                  <span class="MuiIconButton-label">Profile</span><span class="MuiTouchRipple-root"></span>
+                </a>
+              </div>
+            </header>
+          </div>
+        </header>
+        
+        <div class="App-body">
+          <div>      
+            <canvas width="500" height="500" id="game"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+<!-- inline css for the actual gameplay -->
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  #game {
+    background: coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  canvas {
+    border: 2px solid white;
+  }
+  body {
+    overflow: hidden;
+  }
+  </style>
+<script>
+var canvas = document.getElementById('game');
+var context = canvas.getContext('2d');
+var grid = 16;
+var count = 0;
+  
+var snake = {
+  x: 160,
+  y: 160,
+
+  dx: grid,
+  dy: 0,
+  
+  cells: [],
+  
+  maxCells: 4
+};
+var food = {
+  x: 320,
+  y: 320
+};
+// Returns whether or not the given value is between the min and max values
+function bound(val,min,max){
+  if((min <= val) && (val <= max)){
+    return true;
+  }
+  return false;
+}
+// this function is where you get the random numbers for the food in order for it appear in the map and for the snake to eat. 
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+//starts the actual gameplay
+function loop() {
+  requestAnimationFrame(loop);
+  if (++count < 4) {
+    return;
+  }
+  count = 0;
+  context.clearRect(0,0,canvas.width,canvas.height);
+
+  snake.x += snake.dx;
+  snake.y += snake.dy;
+  if (snake.x < 0) {
+    snake.x = canvas.width - grid;
+  }
+  else if (snake.x >= canvas.width) {
+    snake.x = 0;
+  }
+  
+  if (snake.y < 0) {
+    snake.y = canvas.height - grid;
+  }
+  else if (snake.y >= canvas.height) {
+    snake.y = 0;
+  }
+//keeps track of where its been 
+  snake.cells.unshift({x: snake.x, y: snake.y});
+
+  if (snake.cells.length > snake.maxCells) {
+    snake.cells.pop();
+  }
+  context.fillStyle = 'red';
+  context.fillRect(food.x, food.y, grid-1, grid-1);
+
+  context.fillStyle = 'green';
+  snake.cells.forEach(function(cell, index) {
+    
+    context.fillRect(cell.x, cell.y, grid-1, grid-1);  
+
+    // The range of acceptable values the snake must pass through
+    // 4 is good as the snake operates at 2 and 8
+    var range = 4;
+
+    // Bound the snakes position and see if it can eat the food
+    if (bound(cell.x, food.x - range, food.x + range) && bound(cell.y, food.y - range, food.y + range)) {
+      snake.maxCells++;
+      food.x = getRandomInt(0, 25) * grid;
+      food.y = getRandomInt(0, 25) * grid;
+    }
+    //simple bubble sort that keeps track of which squares collided into each other if at all. 
+    for (var i = index + 1; i < snake.cells.length; i++) {
+      //the snake occupies same space as another body part reset game because you died 
+      if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+        snake.x = 160;
+        snake.y = 160;
+        snake.cells = [];
+        snake.maxCells = 4;
+        snake.dx = grid;
+        snake.dy = 0;
+        food.x = getRandomInt(0, 25) * grid;
+        food.y = getRandomInt(0, 25) * grid;
+      }
+    }
+  });
+}
+//event listener for the keystrokes that are used for gameplay 
+document.addEventListener('keydown', function(e) {
+  
+  // left arrow key
+  if (e.which === 37 && snake.dx === 0) {
+    snake.dx = -grid;
+    snake.dy = 0;
+  }
+  // up arrow key
+  else if (e.which === 38 && snake.dy === 0) {
+    snake.dy = -grid;
+    snake.dx = 0;
+  }
+  // right arrow key
+  else if (e.which === 39 && snake.dx === 0) {
+    snake.dx = grid;
+    snake.dy = 0;
+  }
+  // down arrow key
+  else if (e.which === 40 && snake.dy === 0) {
+    snake.dy = grid;
+    snake.dx = 0;
+  }
+});
+// start the game
+requestAnimationFrame(loop);
+</script>
+<!-- </body>
+</html> -->

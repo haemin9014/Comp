@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Sign up Account</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+<!-- 	<script>
+		function checkp{
+			var p = createAccount.p.value;
+			var rp = createAccount.rp.value;
+
+			if(p==rp)
+
+			else
+			alert("password doesn't match!")
+
+			msg=(p==rp)?"Both are some":"mismatch";
+			alert(msg)
+		}
+	</script> -->
+	<body>
+		<div class = "main_container">
+			<div class = "createleftPart">
+				<div class ="createleftColor">
+					<div class = "createleftimg"> </div>
+				</div>
+			</div>
+			<form action="create.html" name = "createAccount"> 		
+				<div class="createrightPart">					
+					<button type="button" class ="close_page">
+						<a href="index.html">Close</a>
+					</button>
+					<div class = "titleLoginCreate">
+						<p> Sign Up</p>
+					</div>
+					<div class = "mainFormat">
+						<div class = "createFormatID">
+							<input class ="inputID" type="text" placeholder="UserID" required>
+						</div>
+						<div class = "userName">
+							<div class = "firstName">
+								<input class ="inputNameFirst" type="text" placeholder="First Name" required>	
+							</div>
+							<div class ="lastName">
+								<input class ="inputNameLast" type="text" placeholder="Last Name" required>
+							</div>
+						</div>
+						<div class = "dateOfBirth">
+							<input class = "dateBirth" type = "date" size = "30" min= "1930-01-01" max= "2010-01-01" required>
+						</div>
+						<div class = "createFormatPWD">
+							<input class ="inputPWD" type="password"placeholder="Password" name ="p"required>
+						</div>
+
+						<div class = "createFormatPWD">
+							<input class ="inputPWD" type="password" placeholder="Re-type Password" name ="rp"required>
+						</div>
+						<div class = "Formatemail">
+							<div>
+								<input class ="userEmail" type="email" placeholder="Email" required>
+							</div>
+						</div>
+						<div class ="chooseQuestion">
+							<p>Chose and Answer Three Slective Question</p>
+						</div>
+						<div class ="selectionOne">
+							<select name = "questionOne" class = "questionOne">
+								<option>Choose an option</option>
+								<option value = "q1-1">What was the house number and street name you lived in as a child?</option>
+								<option value = "q1-2">What were the last four digits of your childhood telephone number?</option>
+								<option value = "q1-3">What primary school did you attend?</option>
+								<option value = "q1-4">In what town or city was your first full time job?</option>
+								<option value = "q1-5">In what town or city did you meet your spouse/partner?</option>
+								<option value = "q1-6">What is the middle name of your oldest child?</option>
+								<option value = "q1-8">What are the last five digits of your driver's licence number?</option>
+								<option value = "q1-9">What is your grandmother's (on your mother's side) maiden name?</option>
+								<option value = "q1-10">What is your spouse or partner's mother's maiden name?</option>
+								<option value = "q1-11">In what town or city did your mother and father meet?</option>
+								<option value = "q1-12">What time of the day were you born? (hh:mm)</option>
+								<option value = "q1-13">What time of the day was your first child born? (hh:mm)</option>
+							</select>
+						</div>
+						<div class = "questionOneAnswer">
+							<input class ="inputAnswer" type="text" placeholder="Question One Answer" name ="answerOne" required>
+						</div>
+						<div class ="selectionTwo">
+							<select name = "questionTwo" class = "questionTwo">
+								<option>Choose an option</option>
+								<option value = "q2-1">What was the house number and street name you lived in as a child?</option>
+								<option value = "q2-2">What were the last four digits of your childhood telephone number?</option>
+								<option value = "q2-3">What primary school did you attend?</option>
+								<option value = "q2-4">In what town or city was your first full time job?</option>
+								<option value = "q2-5">In what town or city did you meet your spouse/partner?</option>
+								<option value = "q2-6">What is the middle name of your oldest child?</option>
+								<option value = "q2-8">What are the last five digits of your driver's licence number?</option>
+								<option value = "q2-9">What is your grandmother's (on your mother's side) maiden name?</option>
+								<option value = "q2-10">What is your spouse or partner's mother's maiden name?</option>
+								<option value = "q2-11">In what town or city did your mother and father meet?</option>
+								<option value = "q2-12">What time of the day were you born? (hh:mm)</option>
+								<option value = "q2-13">What time of the day was your first child born? (hh:mm)</option>							</select>
+						</div>
+						<div class = "questionTwoAnswer">
+							<input class ="inputAnswer" type="text" placeholder="Question Two Answer" name ="answerTwo" required>
+						</div>
+						<div class ="selectionThree">
+							<select name = "questionThree" class = "questionThree">
+								<option>Choose an option</option>
+								<option value = "q3-1">What was the house number and street name you lived in as a child?</option>
+								<option value = "q3-2">What were the last four digits of your childhood telephone number?</option>
+								<option value = "q3-3">What primary school did you attend?</option>
+								<option value = "q3-4">In what town or city was your first full time job?</option>
+								<option value = "q3-5">In what town or city did you meet your spouse/partner?</option>
+								<option value = "q3-6">What is the middle name of your oldest child?</option>
+								<option value = "q3-8">What are the last five digits of your driver's licence number?</option>
+								<option value = "q3-9">What is your grandmother's (on your mother's side) maiden name?</option>
+								<option value = "q3-10">What is your spouse or partner's mother's maiden name?</option>
+								<option value = "q3-11">In what town or city did your mother and father meet?</option>
+								<option value = "q3-12">What time of the day were you born? (hh:mm)</option>
+								<option value = "q3-13">What time of the day was your first child born? (hh:mm)</option>							</select>
+						</div>
+						<div class = "questionThreeAnswer">
+							<input class ="inputAnswer" type="text" placeholder="Question Three Answer" name ="answerThree" required>
+						</div>						
+							<div>
+								<input type="submit" class="submit_button_create" value="Sign Up" onclick = "checkp()">
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+	<footer>
+
+	</footer>
+</html>

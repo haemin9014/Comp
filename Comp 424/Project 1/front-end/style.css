@@ -1,0 +1,434 @@
+.main_container {
+    width: 900px;
+    overflow: hidden;
+    margin: 100px auto 30px;
+}
+
+.leftPart {
+    width: 500px;
+    height: 380px;
+    float: left;
+    position: relative;
+    display: block;
+}
+.leftimg {
+	background-image: url("image/background.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 90px;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.leftColor {
+    width: 100%;
+    height: 100%;
+    background-color: skyblue;
+    border-top-left-radius: 90px;
+    border: 1px solid blue;
+}
+
+/*starting right side css*/
+.rightPart {
+    width: 398px;
+    height: 378px;
+    float: right;
+    border: 1px solid blue;
+    border-bottom-right-radius: 90px;
+    background-color: aliceblue;
+}
+
+.titleLogin{
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: skyblue;	
+}
+
+.mainFormat {
+	width: 310px;
+    height: 415px;
+    margin: 32px auto;
+}
+
+.loginFormatID{
+    width: 310px;
+    height: 42px;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;	
+}
+
+.inputID{
+    width: 100%;
+    height: 97%;
+    font-size: 19px;
+    color: black;
+    text-indent: 10px;
+    border: 0;
+    outline: none;
+}
+
+.loginFormatPWD{
+    width: 310px;
+    height: 42px;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.inputPWD{
+    width: 100%;
+    height: 97%;
+    font-size: 19px;
+    color: black;
+    text-indent: 10px;
+    border: 0;
+    outline: none;
+}
+
+.create {
+    float: left;
+    font-size: 12px;
+    cursor: pointer;
+    color: blue;
+}
+
+.create:hover {
+    color: red;
+}
+
+.forgot {
+    float: right;
+    font-size: 12px;
+    cursor: pointer;
+    color: blue;
+}
+
+.forgot:hover {
+    color: red;
+}
+
+.submit_button{
+	margin-top: 30px;
+	max-width: 100px;
+	max-height: 100px; 
+	min-width: 300px; 
+	min-height: 30px;
+	background-color: skyblue;
+}
+
+.submit_button:hover {
+	background-color: red;
+}
+
+.titleLoginCreate {
+    font-size: 27px;
+    text-align: center;
+    font-weight: bold;
+    color: skyblue; 
+}
+
+/*.userEmail {
+    float: left;
+    width: 252px;
+    height: 32px;
+    font-size: 15px;
+    color: black;
+    text-indent: 10px;
+    border: 0;
+    outline: none;
+}*/
+
+.userEmail {
+    width: 100%;
+    height: 97%;
+    font-size: 19px;
+    color: black;
+    text-indent: 10px;
+    border: 0;
+    outline: none;
+}
+
+.Formatemail {
+    width: 310px;
+    height: 32px;
+    border-bottom: 1px solid black;   
+}
+
+.email_box {
+    width: 310px;
+    height: 42px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.close_page {
+    float: right;
+    background-color: skyblue;
+    
+}
+
+.close_page:hover {
+    background-color: red;
+}
+
+.submit_button_create {
+    margin-top: 10px;
+    max-width: 100px;
+    max-height: 100px; 
+    min-width: 300px; 
+    min-height: 30px;
+    background-color: skyblue;
+}
+
+.createFormatID{
+    width: 310px;
+    height: 42px;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;    
+}
+
+.createFormatPWD{
+    width: 310px;
+    height: 42px;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.createleftPart {
+    width: 399px;
+    height: 880px;
+    float: left;
+    position: relative;
+    display: block;
+}
+.createleftimg {
+    background-image: url("image/background.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 90px;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.createleftColor {
+    width: 100%;
+    height: 100%;
+    background-color: skyblue;
+    border-top-left-radius: 90px;
+    border: 1px solid blue;
+}
+
+/*starting right side css*/
+.createrightPart {
+    width: 498px;
+    height: 878px;
+    float: right;
+    border: 1px solid blue;
+    border-bottom-right-radius: 90px;
+    background-color: aliceblue;
+}
+
+.chooseQuestion{
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: skyblue; 
+}
+
+select {
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    background-color: skyblue;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 0 0 0 .5em; 
+}
+
+.selectionOne {
+    position: relative;
+    display: block;
+    width: 310px;
+    height: 42px;
+    background-color: skyblue;
+    overflow: hidden;
+    border-radius: 0.25em;
+}
+
+.selectionOne::after {
+    content: '\25bc';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 10px 15px;
+    background-color: skyblue;
+    pointer-events: none;
+}
+
+.selectionOne:hover::after {
+    color: red;
+}
+
+.selectionTwo {
+    position: relative;
+    display: block;
+    width: 310px;
+    height: 42px;
+    background-color: skyblue;
+    overflow: hidden;
+    border-radius: 0.25em;
+}
+
+.selectionTwo::after {
+    content: '\25bc';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 10px 15px;
+    background-color: skyblue;
+    pointer-events: none;
+}
+
+.selectionTwo:hover::after {
+    color: red;
+}
+
+.selectionThree {
+    position: relative;
+    display: block;
+    width: 310px;
+    height: 42px;
+    background-color: skyblue;
+    overflow: hidden;
+    border-radius: 0.25em;
+}
+
+.selectionThree::after {
+    content: '\25bc';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 10px 15px;
+    background-color: skyblue;
+    pointer-events: none;
+}
+
+.selectionThree:hover::after {
+    color: red;
+}
+
+.questionOneAnswer{
+    width: 310px;
+    height: 42px;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.questionTwoAnswer{
+    width: 310px;
+    height: 42px;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.questionThreeAnswer{
+    width: 310px;
+    height: 42px;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.inputAnswer{
+    width: 100%;
+    height: 97%;
+    font-size: 19px;
+    color: black;
+    text-indent: 10px;
+    border: 0;
+    outline: none;    
+}
+
+.userName{
+    width: 310px;
+    height: 42px;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.firstName{
+    float: right;
+}
+
+.inputNameFirst{
+    width: 190px;
+    height: 40px;
+    font-size: 19px;
+    color: black;
+    text-indent: 10px;
+    border: 0;
+    outline: none;
+    text-align: center;
+}
+
+.lastName{
+    float: left;
+}
+
+.inputNameLast{
+    width: 110px;
+    height: 40px;
+    font-size: 19px;
+    color: black;
+    text-indent: 10px;
+    border: 0;
+    outline: none;
+}
+
+.dateOfBirth{
+    width: 310px;
+    height: 42px;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px; 
+}
+
+.dateBirth{
+    width: 100%;
+    height: 97%;
+    font-size: 19px;
+    color: black;
+    text-indent: 10px;
+    border: 0;
+    text-align: left;
+    outline: none;    
+}   
+
+/*from https://codepen.io/maheshambure21/pen/VYJQYG*/
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
