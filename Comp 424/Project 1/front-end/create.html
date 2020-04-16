@@ -4,29 +4,16 @@
 	<head>
 		<title>Sign up Account</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/create.js"></script>
 	</head>
-<!-- 	<script>
-		function checkp{
-			var p = createAccount.p.value;
-			var rp = createAccount.rp.value;
-
-			if(p==rp)
-
-			else
-			alert("password doesn't match!")
-
-			msg=(p==rp)?"Both are some":"mismatch";
-			alert(msg)
-		}
-	</script> -->
-	<body>
 		<div class = "main_container">
 			<div class = "createleftPart">
 				<div class ="createleftColor">
 					<div class = "createleftimg"> </div>
 				</div>
 			</div>
-			<form action="create.html" name = "createAccount"> 		
+			<form action="php/register.php" name = "createAccount" method="post"> 		
 				<div class="createrightPart">					
 					<button type="button" class ="close_page">
 						<a href="index.html">Close</a>
@@ -36,31 +23,37 @@
 					</div>
 					<div class = "mainFormat">
 						<div class = "createFormatID">
-							<input class ="inputID" type="text" placeholder="UserID" required>
+							<input class ="inputID" name="userId" type="text" placeholder="UserID" required>
 						</div>
 						<div class = "userName">
 							<div class = "firstName">
-								<input class ="inputNameFirst" type="text" placeholder="First Name" required>	
+								<input class ="inputNameFirst" name="firstName" type="text" placeholder="First Name" required>	
 							</div>
 							<div class ="lastName">
-								<input class ="inputNameLast" type="text" placeholder="Last Name" required>
+								<input class ="inputNameLast" name="lastName" type="text" placeholder="Last Name" required>
 							</div>
 						</div>
 						<div class = "dateOfBirth">
-							<input class = "dateBirth" type = "date" size = "30" min= "1930-01-01" max= "2010-01-01" required>
-						</div>
-						<div class = "createFormatPWD">
-							<input class ="inputPWD" type="password"placeholder="Password" name ="p"required>
-						</div>
-
-						<div class = "createFormatPWD">
-							<input class ="inputPWD" type="password" placeholder="Re-type Password" name ="rp"required>
+							<input class = "dateBirth" type = "date" name="birthDate" size = "30" min= "1930-01-01" max= "2010-01-01" required>
 						</div>
 						<div class = "Formatemail">
 							<div>
-								<input class ="userEmail" type="email" placeholder="Email" required>
+								<input class ="userEmail" type="email" name="email" placeholder="Email" required>
 							</div>
+						</div>						
+						<div class = "createFormatPWD">
+							<input class ="inputPWD" type="password"placeholder="Password" id="main_password" name ="password" required>
 						</div>
+
+						<div class = "createFormatPWD">
+							<input class ="inputPWD" type="password" placeholder="Re-type Password" id="check_password" name ="retype_pwd" required>
+						</div>
+						<div id ="password_level"></div>
+<!-- 						<div class = "Formatemail">
+							<div>
+								<input class ="userEmail" type="email" name="email" placeholder="Email" required>
+							</div>
+						</div> -->
 						<div class ="chooseQuestion">
 							<p>Chose and Answer Three Slective Question</p>
 						</div>
@@ -123,7 +116,7 @@
 							<input class ="inputAnswer" type="text" placeholder="Question Three Answer" name ="answerThree" required>
 						</div>						
 							<div>
-								<input type="submit" class="submit_button_create" value="Sign Up" onclick = "checkp()">
+								<input type="submit" name="submit_button_create" class="submit_button_create" value="Sign Up" disabled="disabled" onclick = "checkp()">
 							</div>
 						</div>
 					</div>

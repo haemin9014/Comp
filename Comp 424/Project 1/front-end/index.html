@@ -6,6 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="https://kit.fontawesome.com/37f6515aab.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+		<script type="text/javascript" src="scripts/script.js"></script>
 	</head>
 	<body>
 		<div class="main_container">
@@ -19,7 +23,7 @@
 						<p>Login to title</p>
 				</div>
 				<div class = "mainFormat">
-					<form action="welcome.html">
+					<form action="php/login.php" method="post">
 						<div class = "loginFormatID">
 							<input class="inputID" type="text" placeholder="User ID" name="username" required>
 						</div>
@@ -28,7 +32,9 @@
 						</div>
 						<a href="create.html" class = "create">Create Account</a>
 						<a href="forgot.html" class = "forgot">Forgot password?</a>
-						<input type="submit" class="submit_button" value="Login" >
+						<br>
+						<a href="forgotID.html" class = "forgot_ID">Forgot ID?</a>
+						<input type="submit" name="submit_login_info" class="submit_button" value="Login" >
 					</form>
 				</div>
 			</div>

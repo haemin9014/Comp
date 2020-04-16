@@ -133,17 +133,6 @@
     color: skyblue; 
 }
 
-/*.userEmail {
-    float: left;
-    width: 252px;
-    height: 32px;
-    font-size: 15px;
-    color: black;
-    text-indent: 10px;
-    border: 0;
-    outline: none;
-}*/
-
 .userEmail {
     width: 100%;
     height: 97%;
@@ -178,7 +167,7 @@
 }
 
 .submit_button_create {
-    margin-top: 10px;
+    margin-top: 50px;
     max-width: 100px;
     max-height: 100px; 
     min-width: 300px; 
@@ -202,7 +191,7 @@
 
 .createleftPart {
     width: 399px;
-    height: 880px;
+    height: 1010px;
     float: left;
     position: relative;
     display: block;
@@ -231,7 +220,7 @@
 /*starting right side css*/
 .createrightPart {
     width: 498px;
-    height: 878px;
+    height: 1008px;
     float: right;
     border: 1px solid blue;
     border-bottom-right-radius: 90px;
@@ -420,7 +409,80 @@ select {
     border: 0;
     text-align: left;
     outline: none;    
-}   
+}
+
+.leftPartPW {
+    width: 500px;
+    height: 780px;
+    float: left;
+    position: relative;
+    display: block;
+}
+
+.rightPartPW {
+    width: 398px;
+    height: 778px;
+    float: right;
+    border: 1px solid blue;
+    border-bottom-right-radius: 90px;
+    background-color: aliceblue;
+}
+
+.titleForgotPage{
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: skyblue;     
+}
+
+.submit_button_ID{
+    margin-top: 30px;
+    max-width: 100px;
+    max-height: 100px; 
+    min-width: 300px; 
+    min-height: 30px;
+    background-color: skyblue;
+}
+#password_level{
+    width: 310px;
+    height: 43px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 17px;  
+}
+
+#password_level.weak_password{
+    border-bottom: 2px solid black;
+    border: 1px solid red;
+    background: skyblue;
+    color: red;
+}
+
+#password_level.mid_password{
+    border: 1px solid orange;
+    background: skyblue;
+    color: orange;
+}
+
+#password_level.str_password{
+    border: 1px solid lightgreen;
+    background: skyblue;
+    color: lightgreen;
+}
+
+#password_level.perfect_password{
+    border: 1px solid green;
+    background: skyblue;
+    color: green;
+}            
+.forgot_ID {
+    float: right;
+    font-size: 12px;
+    cursor: pointer;
+    color: blue;
+}
 
 /*from https://codepen.io/maheshambure21/pen/VYJQYG*/
 [type="date"] {
