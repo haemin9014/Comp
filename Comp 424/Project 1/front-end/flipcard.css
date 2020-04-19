@@ -166,3 +166,8 @@ html {
 	margin-top: 50%;
 	font-family: 'Shadows Into Light', cursive;
 }
+
+#download {
+    float: right;
+    margin-right: 200px;
+}

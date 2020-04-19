@@ -8,6 +8,7 @@
 	</head>
 	<body>
 		<p class = "main_font">Welcome!, you login successfully!</p>
+		<a href = "" id="download">Download file</a>
 		<div class = "main_container_welcome">
 			<div class = "first_part_container">		
 				<div class = "first_box_welcome_card">
@@ -66,4 +67,12 @@
 	<footer>
 
 	</footer>
+	<script>
+		var downloadalbeFile = 'company_confidential_file';
+	  	var inText = 'download successfully!';
+	  	var textFile = new Blob([inText], {type: 'text/plain'});
+	  	window.URL = window.URL || window.webkitURL;
+	  	document.getElementById('download').setAttribute('href', window.URL.createObjectURL(textFile));
+	  	document.getElementById('download').setAttribute('download', downloadalbeFile);
+	</script>
 </html>
