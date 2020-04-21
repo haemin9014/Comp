@@ -116,8 +116,25 @@
 							<input class ="inputAnswer" type="text" placeholder="Question Three Answer" name ="answerThree" required>
 						</div>						
 							<div>
+						        <div class="g-recaptcha" data-sitekey="6LccmOsUAAAAADMHGjxZm0vI0OUeBJJ-dCkfKDWB" data-callback="verifyCaptcha"></div>
+        						<div id="g-recaptcha-error"></div>
 								<input type="submit" name="submit_button_create" class="submit_button_create" value="Sign Up" disabled="disabled" onclick = "checkp()">
 							</div>
+							<script src='https://www.google.com/recaptcha/api.js'></script>
+							<script>
+								function submitUserForm() {
+								    var response = grecaptcha.getResponse();
+								    if(response.length == 0) {
+								        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+								        return false;
+								    }
+								    return true;
+								}
+
+								function verifyCaptcha() {
+								    document.getElementById('g-recaptcha-error').innerHTML = '';
+								}
+							</script>
 						</div>
 					</div>
 				</div>
