@@ -1,3 +1,7 @@
+<?php
+session_start();
+require("function.php");
+?>
 <!DOCTYPE html>
 <!-- this html will be connected with back-end, which means when user login successfully, it will load this page. -->
 <html>
@@ -8,9 +12,15 @@
 	</head>
 	<body>
 		<p class = "main_font">Welcome!, you login successfully!</p>
+		<?php 
+		if(isset($_SESSION['username'])){
+			$usersData = getUsersData(getId($_SESSION['username']));
+			?>
 		<div id ="setname">
-		<?php include 'displayinfo.php';?>
+		<?php echo $usersData['lastname']." ".$usersData['firstname']." you last login date is ".$usersData['last_login_date']." and you had login ".$usersData['login_times']." times"; ?>
 		</div>
+		<?php}
+		?>
 		<a href = "" id="download">Download file</a>
 		<div class = "main_container_welcome">
 			<div class = "first_part_container">		
